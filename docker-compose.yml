@@ -14,7 +14,7 @@ services:
       - ./data/media:/taiga-media
       - ./conf/back:/taiga-conf
     environment:
-      TAIGA_HOST: taiga.lan
+      TAIGA_HOST: sygula.tk
       TAIGA_SECRET: secret
       TAIGA_SCHEME: http
       DB_HOST: db
@@ -35,7 +35,7 @@ services:
     volumes:
       - ./conf/front:/taiga-conf
     environment:
-      TAIGA_HOST: taiga.lan
+      TAIGA_HOST: sygula.tk
       TAIGA_SCHEME: http
 
   db:
@@ -94,7 +94,7 @@ services:
       #- ./cert:/taiga-cert
       - ./conf/proxy:/taiga-conf
     environment:
-      TAIGA_HOSTNAME: taiga.lan
+      TAIGA_HOSTNAME: sygula.tk
       ENABLE_SSL: 'no'
       TAIGA_BACK_HOST: back
       TAIGA_FRONT_HOST: front
